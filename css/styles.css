@@ -1,0 +1,361 @@
+@media (min-width: 480px) {
+  .contacto {
+    display: flex;
+    height: 1000px;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+  }
+  .contacto .g-map {
+    width: 100%;
+    align-items: center;
+  }
+  .contacto .g-map iframe {
+    width: 100%;
+  }
+  .contacto #direccion {
+    text-align: center;
+  }
+  .contacto #cel-mail {
+    text-align: center;
+    font-size: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .contacto #direccion {
+    font-size: 25px;
+    grid-area: texto;
+  }
+  .contacto #cel-mail {
+    font-size: 25px;
+    grid-area: texto0;
+  }
+  .contacto .g-map {
+    grid-area: mapa;
+  }
+}
+
+/*estilo servicios*/
+.servicios {
+  background-color: #ead9ee;
+  border: 3px solid #380d59;
+  padding: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.servicios .servis {
+  border: 1px solid black;
+  margin: 18px;
+  padding: 20px;
+  max-width: 100%;
+  max-height: 100%;
+  flex-wrap: wrap;
+}
+.servicios .servis img {
+  height: 300px;
+  width: 300px;
+}
+@media (min-width: 480px) {
+  .servicios {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .servicios {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.divHome {
+  display: flex;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 10px;
+}
+
+.carousel {
+  display: grid;
+  height: 200px;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  justify-content: center;
+}
+.carousel .carousel-item img {
+  max-width: 600px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* pise la clase del carousel de boostrap(no se si es lo correcto)- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding-top: 0;
+  background: linear-gradient(to bottom, rgb(183, 169, 189), rgb(225, 196, 243));
+  height: 100%;
+}
+header img {
+  height: auto;
+  width: 250px;
+}
+
+/*estilo barra nav*/
+.navbar-nav {
+  display: flex;
+  height: auto;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.dropdown-item {
+  display: flex;
+  height: auto;
+  justify-content: space-around;
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+}
+
+li {
+  display: inline-block;
+  margin: 10px;
+}
+
+/*estilo titulos/textos*/
+h1 {
+  color: rgb(118, 79, 124);
+  font-size: 50px;
+  font-family: "Dancing+Script";
+  text-align: center;
+  font-weight: 300px;
+  text-shadow: 2px 2px 4px #888;
+}
+
+h2 {
+  font-size: 50px;
+  font-family: "Ubuntu";
+  text-align: center;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: "Ubuntu";
+}
+
+p {
+  text-align: center;
+  color: rgb(89, 61, 101);
+  font-family: "Ubuntu";
+  font-size: 19px;
+  text-align: center;
+  height: 30px;
+}
+
+/*intro pagina*/
+/* estilo contacto*/
+/*media mobil*/
+@media (min-width: 480px) {
+  header {
+    height: 100%;
+    width: 100%;
+  }
+  ul {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+  }
+  li {
+    width: 20%;
+    text-align: center;
+    font-size: 20px;
+  }
+  .divHome {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+  .carousel {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .contacto {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    height: 800px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .contacto h2 {
+    height: auto;
+    width: auto;
+  }
+  #direcion {
+    height: auto;
+    width: auto;
+  }
+}
+/* fin media mobile*/
+/* media escritrio*/
+@media (min-width: 1200px) {
+  header {
+    height: 100%;
+    width: 100%;
+  }
+  ul {
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+  }
+  li {
+    width: 20%;
+    text-align: center;
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 70px;
+  }
+  /* intro pag */
+  .divHome {
+    display: grid;
+    height: 1000px;
+    width: 100%;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "texto1 carousel carousel " "texto2 carousel carousel" "texto3 carousel carousel" "texto3 carousel carousel";
+    align-items: center;
+  }
+  .divHome h3 {
+    margin: 0 auto;
+    padding: 0 auto;
+    grid-area: texto2;
+  }
+  .divHome p {
+    grid-area: texto3;
+  }
+  .divHome .carousel-item {
+    display: flex;
+    height: 500px;
+    max-width: 100%;
+    grid-area: carosuel;
+    flex-wrap: wrap;
+  }
+  /* estilo contacto escritorio*/
+  .contacto {
+    display: grid;
+    height: 800px;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "titulo1 mapa " "texto mapa " "texto mapa " "titulo2 mapa " "texto0 mapa ";
+  }
+  .contacto h2 {
+    font-size: 35px;
+    text-align: center;
+    margin: o auto;
+  }
+  .contacto h3 {
+    font-size: 30px;
+    text-align: center;
+    grid-area: titulo2;
+  }
+}
+.g-map {
+  background-color: #705790;
+  padding: 20px;
+}
+.g-map .g-map iframe {
+  display: block;
+  width: 90%;
+  height: 450px;
+  border: 1px solid #6f4e78;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* footer*/
+.pie-pagina {
+  background: linear-gradient(to bottom, rgb(183, 169, 189), rgb(225, 196, 243));
+  padding: 40px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  flex-wrap: wrap;
+  font-size: 15px;
+  height: auto;
+}
+
+.redes-sociales {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.enlace-red {
+  color: #842086;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "ubuntu";
+}
+
+.pie-pagina p {
+  font-size: 25px;
+  font-family: "ubuntu";
+}
+
+/*estilo formularios */
+form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #755c7c;
+  border-radius: 5px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d2b7d3;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #583462;
+  color: rgb(189, 157, 202);
+  padding: 10px 20px;
+  border: #380d59;
+}
+
+/*# sourceMappingURL=styles.css.map */

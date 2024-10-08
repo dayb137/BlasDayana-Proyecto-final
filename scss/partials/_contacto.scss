@@ -1,0 +1,60 @@
+@import '_variables';
+
+.contacto{
+    
+    @media (min-width: $medidamq-celu){
+        display: flex;
+        height: 1000px;
+        flex-direction: column;
+        justify-content: space-around;
+        list-style-type: none;
+        align-items: center;
+        
+        .g-map {
+            width: 100%;
+            align-items: center;
+        }
+
+        .g-map iframe{
+            width: 100%;
+        }
+        
+        #direccion{
+            text-align: center;
+        }
+
+        #cel-mail{
+            text-align: center;
+            font-size: 15px
+        }
+
+
+       
+
+    }
+
+    @media (min-width: $medidamq-pc){
+        
+        #direccion{
+            font-size: 25px;
+            grid-area: texto;
+        }
+        
+        #cel-mail{
+            font-size: 25px;
+            grid-area:texto0;
+        }
+
+        
+
+        .g-map {
+            grid-area: mapa;
+        
+        }
+
+
+    }
+}
+    
+    
+

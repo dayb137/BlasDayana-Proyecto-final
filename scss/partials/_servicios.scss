@@ -1,0 +1,44 @@
+@import '_variables';
+
+
+/*estilo servicios*/
+
+.servicios{
+    background-color: #ead9ee;
+    border: 3px solid #380d59;
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    .servis{
+        border: 1px solid black;
+        margin: 18px;
+        padding: 20px;
+        max-width: 100%;
+        max-height: 100%;
+        flex-wrap: wrap;
+        
+        img{
+            height: 300px;
+            width: 300px;
+        }
+        
+    }
+
+    @media (min-width: $medidamq-celu){
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-around;
+        list-style-type: none;
+        align-items: center;
+
+    }
+
+    @media (min-width: $medidamq-pc){
+        display: flex;
+        flex-direction: row;
+    }
+}
+
