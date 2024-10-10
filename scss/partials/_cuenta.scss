@@ -4,72 +4,61 @@ $color-principal: #d097f6;
 $color-secundario: #0d0711;
 
 
-
-.form-cuenta{
-    width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #755c7c;
-    border-radius: 5px;
-
+.contenido-formulario{
+    padding: 30px;
+    display: flex;
+    align-content: center;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 1px;
     
     
-
-
     
-    
-    .contenido-formulario{
-        padding: 30px;
-        display: flex;
-        align-content: center;
-        margin-bottom: 10px;
-        width: 100%;
-        background: linear-gradient(to bottom rigth, $color-principal, $color-secundario);
-        border-radius: 10px;
+    .form-cuenta{
+        width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #755c7c;
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
-
-     
-
-        textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #d2b7d3;
-            border-radius: 3px;
-            box-sizing: border-box;
-         }
-       
-        .input-estilo{
+        background: linear-gradient(to bottom rigth, $color-principal, $color-secundario );
+        border-radius: 10px;
+        font-family: "ubuntu";
+        
+        
+        input{
             border: 1px solid #a059b0;
             padding: 10px;
             border-radius: 5px;
             margin-bottom: 5px;
-            font-family: "ubuntu";
-
-
-
-           
-            
-
-        }
-    }
-
-    @media (min-width: $medidamq-pc){
-        .form-cuenta{
-           display: flex;
-           flex-direction: row;
-           justify-content: space-between;
-           width: 600px;
-        }
-
-        .contenido-formulario{
-            flex-wrap: nowrap;
-
         }
         
+    
+    
+    
+ }
+    
+    
+    
+    
+    @media (min-width: $medidamq-pc){
 
-
+        .form-cuenta{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 600px;
+        }
+        
+        .contenido-formulario{
+            flex-wrap: nowrap;
+            
+        }
+        
+        
+        
     }
+    
+    
+    
 
-    
-    
 }
