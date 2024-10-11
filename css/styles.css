@@ -126,45 +126,38 @@
 }
 
 /* variables para definir medias q por si en un futuro se necesita de otra medida*/
-.form-cuenta {
-  width: 300px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #755c7c;
-  border-radius: 5px;
-}
-.form-cuenta .contenido-formulario {
+.contenido-formulario {
   padding: 30px;
   display: flex;
   align-content: center;
   margin-bottom: 10px;
   width: 100%;
+  border-radius: 1px;
+}
+.contenido-formulario .form-cuenta {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #755c7c;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
   background: linear-gradient(to bottom rigth, #d097f6, #0d0711);
   border-radius: 10px;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  font-family: "ubuntu";
 }
-.form-cuenta .contenido-formulario textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #d2b7d3;
-  border-radius: 3px;
-  box-sizing: border-box;
-}
-.form-cuenta .contenido-formulario .input-estilo {
+.contenido-formulario .form-cuenta input {
   border: 1px solid #a059b0;
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 5px;
-  font-family: "ubuntu";
 }
 @media (min-width: 1200px) {
-  .form-cuenta .form-cuenta {
+  .contenido-formulario .form-cuenta {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 600px;
   }
-  .form-cuenta .contenido-formulario {
+  .contenido-formulario .contenido-formulario {
     flex-wrap: nowrap;
   }
 }
@@ -288,6 +281,13 @@ p {
 /* estilo contacto*/
 /*media mobil*/
 @media (min-width: 300px) {
+  header {
+    height: 100px;
+  }
+  header img {
+    height: 100px;
+    width: 100px;
+  }
   ul {
     display: flex;
     height: auto;
@@ -304,6 +304,17 @@ p {
   .divHome {
     display: flex;
     margin: 0 auto;
+  }
+  .divHome .contenido-texto {
+    width: 250px;
+  }
+  .divHome .contenido-texto h2 {
+    width: 250px;
+    font-size: 2.5rem;
+  }
+  .divHome .logo img {
+    height: 200px;
+    width: auto;
   }
   .contacto {
     display: flex;
