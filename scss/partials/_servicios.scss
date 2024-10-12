@@ -94,31 +94,23 @@
    
     
         
-        @media (min-width: $medidamq-pc){
-
-            .servicios{
-                display: flex;
-                flex-direction: row;
-
-            }
-
+    @media (min-width: $medidamq-pc){
+        .servicios{
+            display: flex;
+            flex-direction: row;
 
             .servis{
-                display: flex;
-                flex-direction:row
-
+                flex: 1;
                 
                 
-
             }
-
+            
             .foto{
                 height: 400px;
                 width: 360px;
             }
-
         }
-        
-        
-
+    }
+    
+    
 
