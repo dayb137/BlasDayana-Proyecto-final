@@ -1,10 +1,7 @@
 @import '_variables';
 
 
-/*estilo servicios
-border: 3px solid #380d59;
-background-color: #ead9ee;
-*/
+/*estilo servicios*/
 
 .contenedor-servicios{
     display: grid;
@@ -30,7 +27,7 @@ background-color: #ead9ee;
             object-fit: cover;
             
         }
-        
+        /*Este selector aplica un efecto de zoom a la imagen al pasar el cursos */
         &:hover{
             transform: translateY(-10px);
             box-shadow: 0 6px 12px rgba(0,0,0,0.2);
@@ -96,6 +93,7 @@ background-color: #ead9ee;
   
 
    
+/* media escritrio*/
     
         
     @media (min-width: $medidamq-pc){

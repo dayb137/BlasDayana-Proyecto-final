@@ -1,6 +1,6 @@
 @import '_variables';
 
-
+/* Estilo contacto*/
 
 .contacto{
     display: flex;
@@ -28,52 +28,32 @@
     }
 }
   
-/* Ajustes para vista desktop*/
+/* Ajustes para vista escritorio*/
 
     @media (min-width: $medidamq-pc){
         .contacto{
-            min-height: 100vh;
-            display: grid;
-            padding: 20px;
-            grid-template-columns: 1fr 1fr;
-            grid-template-areas: 
-                "titulo titulo"
-                "texto0 mapa"
-                "titulo2 mapa"
-                "texto1 mapa";
-            gap: 10px;
-            align-items: center;
-                
+           
 
             h2{
-                grid-area: titulo;
                 font-size: 2.5rem;
-                justify-self: center;
             }
 
             h3{
-                grid-area: titulo2;
-                font-size: 2rem;
+                font-size: 2.5rem;
 
             }
 
 
             #direccion{
-                grid-area: texto0;
                 font-size: 1.4rem;
             }
             
-            #cel-mail{
-                grid-area:texto1;
-            }
-            
+          
             
             
             .g-map {
-                grid-area: mapa;
                 width: 450px;
                 height: 450px;
-                justify-self: center;
                  
                 iframe{
                     width: 400px;

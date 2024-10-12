@@ -1,4 +1,5 @@
 /* variables para definir medias q por si en un futuro se necesita de otra medida*/
+/* Estilo contacto*/
 .contacto {
   display: flex;
   flex-direction: column;
@@ -18,38 +19,20 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Ajustes para vista desktop*/
+/* Ajustes para vista escritorio*/
 @media (min-width: 1200px) {
-  .contacto {
-    min-height: 100vh;
-    display: grid;
-    padding: 20px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "titulo titulo" "texto0 mapa" "titulo2 mapa" "texto1 mapa";
-    gap: 10px;
-    align-items: center;
-  }
   .contacto h2 {
-    grid-area: titulo;
     font-size: 2.5rem;
-    justify-self: center;
   }
   .contacto h3 {
-    grid-area: titulo2;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .contacto #direccion {
-    grid-area: texto0;
     font-size: 1.4rem;
   }
-  .contacto #cel-mail {
-    grid-area: texto1;
-  }
   .contacto .g-map {
-    grid-area: mapa;
     width: 450px;
     height: 450px;
-    justify-self: center;
   }
   .contacto .g-map iframe {
     width: 400px;
@@ -57,10 +40,7 @@
   }
 }
 /* variables para definir medias q por si en un futuro se necesita de otra medida*/
-/*estilo servicios
-border: 3px solid #380d59;
-background-color: #ead9ee;
-*/
+/*estilo servicios*/
 .contenedor-servicios {
   display: grid;
   padding: 10px;
@@ -75,6 +55,7 @@ background-color: #ead9ee;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
   text-align: center;
   padding: 10px;
+  /*Este selector aplica un efecto de zoom a la imagen al pasar el cursos */
 }
 .contenedor-servicios .servis img {
   border-radius: 10px;
@@ -123,6 +104,7 @@ background-color: #ead9ee;
   background-color: #280d39;
 }
 
+/* media escritrio*/
 @media (min-width: 1200px) {
   .contenedor-servicios {
     display: flex;
@@ -165,7 +147,16 @@ background-color: #ead9ee;
   border-radius: 5px;
   margin-bottom: 5px;
 }
+.contenido-formulario .form-cuenta input[type=submit] {
+  background-color: #755c7c;
+  color: #312534;
+  border: black;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
 
+/* Ajustes para vista escritorio*/
 @media (min-width: 1200px) {
   .contenido-formulario {
     flex-direction: row;
@@ -203,12 +194,21 @@ background-color: #ead9ee;
   font-family: "ubuntu";
 }
 .contenido-formularior .form-cuentar input {
-  border: 1px solid #a059b0;
+  border: 1px solid #724f7a;
   padding: 10px;
-  border-radius: 5px;
   margin-bottom: 5px;
+  border-radius: 5px;
+}
+.contenido-formularior .form-cuentar input[type=submit], .contenido-formularior .form-cuentar input[type=reset] {
+  background-color: #755c7c;
+  color: #312534;
+  border: black;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
+/* Ajustes para vista escritorio*/
 @media (min-width: 1200px) {
   .contenido-formularior {
     flex-direction: row;
@@ -292,6 +292,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* Efecto de transparencia y rebote en el logo*/
 }
 .divHome .logo img {
   max-width: 400px;
@@ -372,8 +373,7 @@ p {
     width: auto;
   }
 }
-/* fin media mobile*/
-/* media escritrio*/
+/* fin media mobil*/
 /* footer*/
 .pie-pagina {
   display: flex;
@@ -394,6 +394,7 @@ p {
   font-family: "ubuntu";
 }
 
+/* media escritrio*/
 @media (min-width: 1200px) {
   header {
     height: 200px;

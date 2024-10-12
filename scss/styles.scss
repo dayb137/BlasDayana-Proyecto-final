@@ -94,6 +94,7 @@ p{
 }
 
 /*estilo home*/
+
 .divHome{
     max-width: 1200px;
     margin: 0 auto;
@@ -102,7 +103,7 @@ p{
     flex-direction: column;
     align-items: center;
     
-    
+    /* Efecto de transparencia y rebote en el logo*/
     .logo{
         img{
             max-width: 400px;
@@ -235,10 +236,9 @@ p{
 
 
 
-/* fin media mobile*/
+/* fin media mobil*/
 
 
-/* media escritrio*/
 
 
 
@@ -252,8 +252,8 @@ p{
     justify-content: space-between;
     font-size: 15px;
     padding: 20px 20px;
-
-   
+    
+    
     
     
     .redes-sociales {
@@ -261,7 +261,7 @@ p{
         gap: 10px;
         justify-content: space-around;
         
-
+        
     }
     
     .enlace-red {
@@ -269,12 +269,13 @@ p{
         text-decoration: none;
         font-size: 15px;
         font-family: "ubuntu";
-
+        
     }
     
 }
-    
-    
+
+
+/* media escritrio*/
     
     
     
@@ -310,6 +311,7 @@ p{
             
             
         }
+
         /*footer*/
         
         .pie-pagina {

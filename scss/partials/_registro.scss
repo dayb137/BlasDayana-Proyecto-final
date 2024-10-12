@@ -28,20 +28,28 @@
         
         
         input{
-            border: 1px solid #a059b0;
+            border: 1px solid #724f7a;
             padding: 10px;
-            border-radius: 5px;
             margin-bottom: 5px;
+            border-radius: 5px;
         }
         
-    
-    
-    
- }
+        input[type="submit"], input[type="reset"]{
+            background-color: #755c7c;
+            color: #312534;
+            border: black;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+    }
     
  
 }
-    
+
+/* Ajustes para vista escritorio*/
+
     
     @media (min-width: $medidamq-pc){
 
