@@ -1,116 +1,123 @@
 @import '_variables';
 
 
-/*estilo servicios*/
+/*estilo servicios
+border: 3px solid #380d59;
+background-color: #ead9ee;
+*/
 
-.servicios{
-    background-color: #ead9ee;
-    border: 3px solid #380d59;
+.contenedor-servicios{
     display: grid;
-    margin: 10px;
     padding: 10px;
+    grid-template-columns: repeat(auto-fit, nimax(250px,1fr));
     gap: 20px;
 
     
  
     .servis{
-        border: 1px solid black;
+        background-color: #ead9ee;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+        overflow: hidden;
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+        text-align: center;
         padding: 10px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 50px 350px 400px 30px;
-        grid-template-areas:
-            "titulo"
-            "imagen"
-            "descripcion"
-            "btn";
-        gap: 10px;
-        align-items: center;
+
+        img{
+            border-radius: 10px;
+            width: 50%;
+            height: 50%;
+            object-fit: cover;
+            
+        }
+        
+        &:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+            
+            img{
+                width: 250px;
+                height: 250px;
+                object-fit: cover;
+                transition: transform 0.5s ease;
+                
+            }
+        }
+        
+        
        
 
         h2{
             font-size: 1.5rem;
-            margin-bottom: 10px;
-            grid-area: titulo;
-            
-        }
-        p{
-            text-align: center;
-            grid-area: descripcion;
-            
-            
+            margin: 15px 0;
+            color:#280d39;
+            font-weight: 700;
             
         }
 
-        .foto{
-            border: 1px ;
-            border-radius: 8px;
-            margin-bottom: 10px;
-            max-height: 80%;
-            max-width: 80%;
-            transition: opacity 5s;
-            position: relative;
-            object-fit: cover;
-            align-self: center;
-            justify-self: center ;
-            grid-area: imagen;
+        .descripcion{
+            font-size: 1rem;
+            color: #380d59;
+            margin: 10px;
+            padding: 0 15px;
+        }
 
+        .precio{
+            font-size: 1.25rem;
+            font-weight: bold;
+            color:#380d59;
+            margin: 15px 0;
+        }
+        
+        
+        .btn-cita{
+            margin-top: 10px;
+            background-color: #380d59;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            grid-area: btn;
             
-
-
-            &.dos{
-                opacity: 0;
+            
+            &:hover {
+                background-color: #280d39;
             }
-
+            
         }
         
-       
-    }
-
-    .btn-cita{
-        margin-top: 10px;
-        background-color: #380d59;
-        color: white;
-        border: none;
-        padding: 10px 15px;
-        cursor: pointer;
-        grid-area: btn;
         
-
-        &:hover {
-            background-color: #280d39;
-        }
-
-       
     }
-   
       
-  }
 
 
 
+}
   
 
    
     
         
     @media (min-width: $medidamq-pc){
-        .servicios{
+        .contenedor-servicios{
             display: flex;
-            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap:30px;
 
-            .servis{
-                flex: 1;
-                
-                
-            }
-            
-            .foto{
+
+            .servis img{
+                width: 300px;
                 height: 400px;
-                width: 360px;
             }
+
+          
         }
+
+
+           
     }
     
-    
 
+    
+    
