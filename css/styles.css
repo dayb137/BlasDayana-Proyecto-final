@@ -6,6 +6,9 @@
   justify-content: space-around;
   list-style-type: none;
   align-items: center;
+  background: hsl(282, 100%, 97%);
+  border-top: 3px solid rgb(89, 61, 101);
+  border-radius: 10px;
 }
 .contacto .g-map {
   background-color: #705790;
@@ -51,11 +54,11 @@
   background-color: #ead9ee;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
   text-align: center;
   padding: 10px;
   /*Este selector aplica un efecto de zoom a la imagen al pasar el cursos */
+  /* */
 }
 .contenedor-servicios .servis img {
   border-radius: 10px;
@@ -89,28 +92,35 @@
   font-size: 1.25rem;
   font-weight: bold;
   color: #380d59;
-  margin: 15px 0;
+  margin: 10px 0;
 }
 .contenedor-servicios .servis .btn-cita {
-  margin-top: 10px;
   background-color: #380d59;
   color: white;
-  border: none;
-  padding: 10px 15px;
+  border-radius: 6px;
+  margin-bottom: auto;
+  padding: 15px;
   cursor: pointer;
-  grid-area: btn;
 }
 .contenedor-servicios .servis .btn-cita:hover {
   background-color: #280d39;
 }
 
+@media (min-width: 300px) {
+  .servis {
+    height: 650px;
+  }
+}
 /* media escritrio*/
 @media (min-width: 1200px) {
   .contenedor-servicios {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 60px;
+  }
+  .contenedor-servicios .servis {
+    height: auto;
   }
   .contenedor-servicios .servis img {
     width: 300px;
@@ -136,8 +146,7 @@
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #755c7c;
-  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(to bottom rigth, #d097f6, #0d0711);
+  box-shadow: 6px 6px rgba(209, 204, 204, 0.493);
   border-radius: 10px;
   font-family: "ubuntu";
 }
@@ -148,9 +157,9 @@
   margin-bottom: 5px;
 }
 .contenido-formulario .form-cuenta input[type=submit] {
-  background-color: #755c7c;
-  color: #312534;
-  border: black;
+  background-color: rgba(117, 92, 124, 0.1215686275);
+  color: #544158;
+  border-top: 2px solid rgb(109, 105, 105);
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 5px;
@@ -200,9 +209,8 @@
   border-radius: 5px;
 }
 .contenido-formularior .form-cuentar input[type=submit], .contenido-formularior .form-cuentar input[type=reset] {
-  background-color: #755c7c;
-  color: #312534;
-  border: black;
+  color: #544158;
+  border-top: 2px solid rgb(109, 105, 105);
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 5px;
@@ -265,15 +273,17 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 16px;
   font-family: "Ubuntu";
   text-align: center;
+  color: rgb(89, 61, 101);
 }
 
 h3 {
-  font-size: 1.7rem;
+  font-size: 16px;
   font-family: "Ubuntu";
   text-align: center;
+  color: rgb(89, 61, 101);
 }
 
 p {
@@ -292,11 +302,11 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Efecto de transparencia y rebote en el logo*/
 }
 .divHome .logo img {
   max-width: 400px;
   margin-bottom: 20px;
+  /* Efecto de transparencia y rebote en el logo*/
   opacity: 0;
   transform: translateY(-20px);
   animation: fadeInBounce 3s forwards;
@@ -322,6 +332,9 @@ p {
   text-align: center;
   margin-bottom: 40px;
   width: 100%;
+  background: rgb(250, 240, 255);
+  border-top: 3px solid rgb(89, 61, 101);
+  border-radius: 6px;
 }
 .divHome .contenido-texto p {
   font-size: 20px;
@@ -371,6 +384,7 @@ p {
   .divHome .logo img {
     height: 250px;
     width: auto;
+    margin: 0;
   }
 }
 /* fin media mobil*/
@@ -405,6 +419,9 @@ p {
   }
   h1 {
     font-size: 70px;
+  }
+  h2 {
+    font-size: 3rem;
   }
   /* intro pag */
   .divHome .logo img {

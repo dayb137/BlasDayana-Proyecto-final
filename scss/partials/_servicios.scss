@@ -9,17 +9,20 @@
     grid-template-columns: repeat(auto-fit, nimax(250px,1fr));
     gap: 20px;
 
+
+    
+
     
  
     .servis{
         background-color: #ead9ee;
         border-radius: 10px;
         box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-        overflow: hidden;
         transition: transform 0.5s ease, box-shadow 0.5s ease;
         text-align: center;
         padding: 10px;
 
+        
         img{
             border-radius: 10px;
             width: 50%;
@@ -63,18 +66,17 @@
             font-size: 1.25rem;
             font-weight: bold;
             color:#380d59;
-            margin: 15px 0;
+            margin: 10px 0;
         }
         
-        
+        /* */
         .btn-cita{
-            margin-top: 10px;
             background-color: #380d59;
             color: white;
-            border: none;
-            padding: 10px 15px;
+            border-radius: 6px;
+            margin-bottom: auto;
+            padding: 15px;
             cursor: pointer;
-            grid-area: btn;
             
             
             &:hover {
@@ -90,6 +92,13 @@
 
 
 }
+   
+   @media (min-width: $medidamq-celu){
+        .servis{
+            height: 650px;
+        }
+
+   }
   
 
    
@@ -101,15 +110,21 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap:30px;
+            gap:60px;
 
 
-            .servis img{
-                width: 300px;
-                height: 400px;
-            }
+            .servis{
+                height: auto;
 
-          
+                img{
+                    width: 300px;
+                    height: 400px;
+
+                }    
+            } 
+
+           
+         
         }
 
 

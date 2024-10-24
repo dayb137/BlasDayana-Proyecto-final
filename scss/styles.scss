@@ -67,17 +67,21 @@ h1{
 
 
 h2{
-    font-size: 1.5rem;
+    font-size: 16px;
     font-family: "Ubuntu";
     text-align: center;
+    color: rgb(89, 61, 101);
+
     
     
 }
 
 h3{
-    font-size:1.7rem;
+    font-size:16px;
     font-family: "Ubuntu";
     text-align: center;
+    color: rgb(89, 61, 101);
+
     
     
 }
@@ -102,13 +106,15 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
+
     
-    /* Efecto de transparencia y rebote en el logo*/
+   
     .logo{
         img{
             max-width: 400px;
             margin-bottom: 20px;
-            opacity: 0;
+    /* Efecto de transparencia y rebote en el logo*/
+            opacity: 0;                     
             transform: translateY(-20px);
             animation: fadeInBounce 3s forwards;
             @keyframes fadeInBounce {
@@ -137,10 +143,16 @@ p{
         text-align: center;
         margin-bottom: 40px;
         width: 100%;
+        background: rgb(250, 240, 255);
+        border-top: 3px solid rgb(89, 61, 101);
+        border-radius: 6px;
+
+
         
         
         p{
             font-size: 20px;
+
         }
         
         
@@ -209,19 +221,20 @@ p{
             display: flex;
             flex-direction: column;
             
-            
             h2{ 
             font-size: 1.7rem;
-        }
+            
+          }
 
-      }
+        }
     
         .logo{
             img{
             height: 250px;
             width: auto;
+            margin: 0;
+          }
         }
-      }
 
   
 
@@ -295,6 +308,10 @@ p{
         h1{
             font-size: 70px;
             
+        }
+
+        h2{
+            font-size: 3rem;
         }
         
         /* intro pag */ 
