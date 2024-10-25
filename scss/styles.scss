@@ -3,6 +3,7 @@
 @import 'partials/_cuenta';
 @import 'partials/_registro';
 @import 'partials/_variables';
+@import 'partials/_mixins';
 
 
 
@@ -34,7 +35,6 @@ header{
 
 /*estilo barra nav*/
 
-
 ul{
     display: flex;
     flex-direction: row;
@@ -46,7 +46,6 @@ ul{
 
 
 li{
-    display: block;
     margin: 10px;
     text-align: center;
 }
@@ -90,7 +89,6 @@ p{
     text-align: center;
     color: rgb(89, 61, 101);
     font-family: "Ubuntu";
-    font-size: 1.3rem;
     text-align: center;
     
     
@@ -146,13 +144,15 @@ p{
         background: rgb(250, 240, 255);
         border-top: 3px solid rgb(89, 61, 101);
         border-radius: 6px;
+        
+
+        h2{
+            font-size: 1rem;
+        }
 
 
-        
-        
         p{
-            font-size: 20px;
-
+            font-size: 1.5rem;
         }
         
         
@@ -204,12 +204,14 @@ p{
     }
     
     li{
+        display: block;
         width: 20%;
-        text-align: center;
         font-size: 20px;
         
     }
     
+   
+
     .divHome{
         display: flex;
         margin: 0 auto;
@@ -221,36 +223,102 @@ p{
             display: flex;
             flex-direction: column;
             
+
+            
+
+
             h2{ 
-            font-size: 1.7rem;
+            font-size: 1.5rem;
             
           }
 
-        }
+            p{
+                font-size: 1.2rem;
+            }    
+            
+        }    
     
         .logo{
             img{
-            height: 250px;
+            height: 250px;    
             width: auto;
             margin: 0;
-          }
-        }
+           }  
 
-  
-
+        
+        
+        }    
+    
+    
     }
-
-
-
-
-
-
-} 
-
-
+    
+    
+    
+}     
 
 /* fin media mobil*/
 
+
+/* media escritrio*/
+
+@media (min-width: $medidamq-pc){
+
+
+    li{
+        align-items: center;
+    }
+
+
+    header{
+
+        height: 200px;
+
+        img{
+            height: 200px;
+            width: auto;
+        }
+    }
+        
+    h1{
+        font-size: 70px;
+        
+    }
+    h2{
+        font-size: 3rem;
+    }
+    
+    /* intro pag */ 
+    
+    .divHome{
+        
+        
+        .logo{
+            img{
+                height: 400px;
+                width: auto;
+            }
+        }
+        
+        
+    }
+    /*footer*/
+    
+    .pie-pagina {
+        align-items: center;
+        
+        .redes-sociales {
+            justify-content: center;
+            
+        }
+        
+        .enlace-red {
+            justify-content: center;
+            margin-left: 70px;
+        
+        }
+    }
+    
+}  
 
 
 
@@ -273,9 +341,11 @@ p{
         display: flex;
         gap: 10px;
         justify-content: space-around;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px  #888;
         
         
-    }
+    }    
     
     .enlace-red {
         color: rgb(89, 61, 101);
@@ -283,71 +353,9 @@ p{
         font-size: 15px;
         font-family: "ubuntu";
         
-    }
+    }    
     
-}
+}        
 
 
-/* media escritrio*/
-    
-    
-    
-    @media (min-width: $medidamq-pc){
-
-
-        header{
-            height: 200px;
-
-            img{
-                height: 200px;
-                width: auto;
-
-            }
-        }
-        
-        h1{
-            font-size: 70px;
-            
-        }
-
-        h2{
-            font-size: 3rem;
-        }
-        
-        /* intro pag */ 
-        
-        .divHome{
-            
-            
-            .logo{
-                img{
-                    height: 400px;
-                    width: auto;
-                }
-            }
-            
-            
-        }
-
-        /*footer*/
-        
-        .pie-pagina {
-            align-items: center;
-            
-            .redes-sociales {
-                justify-content: center;
-                
-            }
-            
-            .enlace-red {
-                justify-content: center;
-                margin-left: 70px;
-            
-        }
-    }
-    
-    
-    
-    
-}
-
+  

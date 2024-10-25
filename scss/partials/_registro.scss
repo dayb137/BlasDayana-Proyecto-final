@@ -1,45 +1,20 @@
 @import '_variables';
+@import '_mixins';
 
 
-.contenido-formularior{
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-    width: 100%;
-    border-radius: 1px;
-    gap: 10px;
+.contenido-formulario{
     
     
     
-    .form-cuentar{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 300px;
-        margin: 0 auto;
-        padding: 20px;
-        border: 1px solid #755c7c;
-        box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.2);
-        background: linear-gradient(to bottom rigth ,  $color-principal, $color-secundario );
-        border-radius: 10px;
-        font-family: "ubuntu";
+    .form-cuenta{
         
         
         input{
-            border: 1px solid #724f7a;
-            padding: 10px;
-            margin-bottom: 5px;
-            border-radius: 5px;
+         @include input-form;
         }
         
         input[type="submit"], input[type="reset"]{
-            color: #544158;
-            border-top: 2px solid rgb(109, 105, 105);
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
+         @include input-submit-reset;
         }
 
     }
@@ -52,12 +27,13 @@
     
     @media (min-width: $medidamq-pc){
 
-        .contenido-formularior{
-            flex-direction: row;
+        .contenido-formulario{
+            box-sizing: content-box;
             
-            .form-cuentar{
+            .form-cuenta{
+                width: auto;
                 display: flex;
-                flex-direction: row;
+                flex-direction:row;
                 width: 600px;
                 flex-wrap: wrap;
                 gap: 15px;

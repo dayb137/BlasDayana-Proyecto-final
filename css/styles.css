@@ -136,10 +136,10 @@
   margin-bottom: 10px;
   width: 100%;
   border-radius: 1px;
-  gap: 10px;
 }
 .contenido-formulario .form-cuenta {
   display: flex;
+  gap: 15px;
   flex-direction: column;
   align-items: center;
   width: 300px;
@@ -151,25 +151,28 @@
   font-family: "ubuntu";
 }
 .contenido-formulario .form-cuenta input {
-  border: 1px solid #a059b0;
+  width: 100%;
+  background-color: rgba(234, 207, 240, 0.2470588235);
+  box-sizing: border-box;
+  padding: 10px 20px;
+  border: none;
+  border-left: 3px solid #544158;
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 5px;
 }
 .contenido-formulario .form-cuenta input[type=submit] {
-  background-color: rgba(117, 92, 124, 0.1215686275);
+  width: 50%;
   color: #544158;
+  border: none;
   border-top: 2px solid rgb(109, 105, 105);
+  border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
-  border-radius: 5px;
 }
 
 /* Ajustes para vista escritorio*/
 @media (min-width: 1200px) {
-  .contenido-formulario {
-    flex-direction: row;
-  }
   .contenido-formulario .form-cuenta {
     display: flex;
     flex-direction: row;
@@ -179,49 +182,34 @@
   }
 }
 /* variables para definir medias q por si en un futuro se necesita de otra medida*/
-.contenido-formularior {
-  padding: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
+.contenido-formulario .form-cuenta input {
   width: 100%;
-  border-radius: 1px;
-  gap: 10px;
-}
-.contenido-formularior .form-cuentar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 300px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #755c7c;
-  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(to bottom rigth, #d097f6, #0d0711);
-  border-radius: 10px;
-  font-family: "ubuntu";
-}
-.contenido-formularior .form-cuentar input {
-  border: 1px solid #724f7a;
+  background-color: rgba(234, 207, 240, 0.2470588235);
+  box-sizing: border-box;
+  padding: 10px 20px;
+  border: none;
+  border-left: 3px solid #544158;
   padding: 10px;
-  margin-bottom: 5px;
   border-radius: 5px;
+  margin-bottom: 5px;
 }
-.contenido-formularior .form-cuentar input[type=submit], .contenido-formularior .form-cuentar input[type=reset] {
+.contenido-formulario .form-cuenta input[type=submit], .contenido-formulario .form-cuenta input[type=reset] {
+  width: 50%;
   color: #544158;
+  border: none;
   border-top: 2px solid rgb(109, 105, 105);
+  border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
-  border-radius: 5px;
 }
 
 /* Ajustes para vista escritorio*/
 @media (min-width: 1200px) {
-  .contenido-formularior {
-    flex-direction: row;
+  .contenido-formulario {
+    box-sizing: content-box;
   }
-  .contenido-formularior .form-cuentar {
+  .contenido-formulario .form-cuenta {
+    width: auto;
     display: flex;
     flex-direction: row;
     width: 600px;
@@ -257,7 +245,6 @@ ul {
 }
 
 li {
-  display: block;
   margin: 10px;
   text-align: center;
 }
@@ -290,7 +277,6 @@ p {
   text-align: center;
   color: rgb(89, 61, 101);
   font-family: "Ubuntu";
-  font-size: 1.3rem;
   text-align: center;
 }
 
@@ -336,8 +322,11 @@ p {
   border-top: 3px solid rgb(89, 61, 101);
   border-radius: 6px;
 }
+.divHome .contenido-texto h2 {
+  font-size: 1rem;
+}
 .divHome .contenido-texto p {
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 .divHome .carousel {
   max-width: 70%;
@@ -366,8 +355,8 @@ p {
     align-items: center;
   }
   li {
+    display: block;
     width: 20%;
-    text-align: center;
     font-size: 20px;
   }
   .divHome {
@@ -379,7 +368,10 @@ p {
     flex-direction: column;
   }
   .divHome .contenido-texto h2 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+  }
+  .divHome .contenido-texto p {
+    font-size: 1.2rem;
   }
   .divHome .logo img {
     height: 250px;
@@ -388,28 +380,11 @@ p {
   }
 }
 /* fin media mobil*/
-/* footer*/
-.pie-pagina {
-  display: flex;
-  background: linear-gradient(to bottom, rgb(183, 169, 189), rgb(225, 196, 243));
-  justify-content: space-between;
-  font-size: 15px;
-  padding: 20px 20px;
-}
-.pie-pagina .redes-sociales {
-  display: flex;
-  gap: 10px;
-  justify-content: space-around;
-}
-.pie-pagina .enlace-red {
-  color: rgb(89, 61, 101);
-  text-decoration: none;
-  font-size: 15px;
-  font-family: "ubuntu";
-}
-
 /* media escritrio*/
 @media (min-width: 1200px) {
+  li {
+    align-items: center;
+  }
   header {
     height: 200px;
   }
@@ -439,6 +414,27 @@ p {
     justify-content: center;
     margin-left: 70px;
   }
+}
+/* footer*/
+.pie-pagina {
+  display: flex;
+  background: linear-gradient(to bottom, rgb(183, 169, 189), rgb(225, 196, 243));
+  justify-content: space-between;
+  font-size: 15px;
+  padding: 20px 20px;
+}
+.pie-pagina .redes-sociales {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #888;
+}
+.pie-pagina .enlace-red {
+  color: rgb(89, 61, 101);
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "ubuntu";
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,4 +1,6 @@
 @import '_variables';
+@import '_mixins';
+
 
 $color-principal: #d097f6;
 $color-secundario: #0d0711;
@@ -12,12 +14,12 @@ $color-secundario: #0d0711;
     margin-bottom: 10px;
     width: 100%;
     border-radius: 1px;
-    gap: 10px;
     
     
     
     .form-cuenta{
         display: flex;
+        gap: 15px;
         flex-direction: column;
         align-items: center;
         width: 300px;
@@ -30,19 +32,12 @@ $color-secundario: #0d0711;
         
         
         input{
-            border: 1px solid #a059b0;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 5px;
+         @include input-form;
+
         }
         
         input[type="submit"]{
-            background-color: #755c7c1f;
-            color: #544158;
-            border-top: 2px solid rgb(109, 105, 105);
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
+         @include input-submit-reset;
         }
     
     
@@ -58,14 +53,13 @@ $color-secundario: #0d0711;
     @media (min-width: $medidamq-pc){
 
         .contenido-formulario{
-            flex-direction: row;
-            
             .form-cuenta{
                 display: flex;
                 flex-direction: row;
                 width: 600px;
                 flex-wrap: wrap;
                 gap: 15px;
+
 
             }
 

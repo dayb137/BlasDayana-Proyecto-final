@@ -1,0 +1,24 @@
+@mixin input-form{
+    width: 100%;
+    background-color: #eacff03f;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border: none;
+    border-left: 3px solid #544158;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+
+}
+
+@mixin input-submit-reset{
+    width: 50%;
+    color: #544158;
+    border: none;
+    border-top: 2px solid rgb(109, 105, 105);
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor:pointer;
+    
+
+}
