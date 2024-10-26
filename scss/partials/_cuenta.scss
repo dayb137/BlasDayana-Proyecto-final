@@ -7,29 +7,13 @@ $color-secundario: #0d0711;
 
 
 .contenido-formulario{
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-    width: 100%;
-    border-radius: 1px;
-    
+
+    @include contenedor-form;
+
     
     
     .form-cuenta{
-        display: flex;
-        gap: 15px;
-        flex-direction: column;
-        align-items: center;
-        width: 300px;
-        margin: 0 auto;
-        padding: 20px;
-        border: 1px solid #755c7c;
-        box-shadow: 6px 6px rgba(209, 204, 204, 0.493);
-        border-radius: 10px;
-        font-family: "ubuntu";
-        
+       @include form;
         
         input{
          @include input-form;
@@ -37,7 +21,12 @@ $color-secundario: #0d0711;
         }
         
         input[type="submit"]{
+            
          @include input-submit-reset;
+        }
+
+        label{
+            @include label
         }
     
     
@@ -53,14 +42,14 @@ $color-secundario: #0d0711;
     @media (min-width: $medidamq-pc){
 
         .contenido-formulario{
+
+
             .form-cuenta{
-                display: flex;
                 flex-direction: row;
                 width: 600px;
                 flex-wrap: wrap;
                 gap: 15px;
-
-
+                
             }
 
             

@@ -2,12 +2,13 @@
 @import '_mixins';
 
 
-.contenido-formulario{
+.contenedor-registro{
+    @include contenedor-form;
     
     
     
-    .form-cuenta{
-        
+    .form-reg{
+        @include form;
         
         input{
          @include input-form;
@@ -16,6 +17,11 @@
         input[type="submit"], input[type="reset"]{
          @include input-submit-reset;
         }
+
+        label{
+            @include label
+        }
+    
 
     }
     
@@ -27,10 +33,10 @@
     
     @media (min-width: $medidamq-pc){
 
-        .contenido-formulario{
+        .contenedor-registro{
             box-sizing: content-box;
             
-            .form-cuenta{
+            .form-reg{
                 width: auto;
                 display: flex;
                 flex-direction:row;

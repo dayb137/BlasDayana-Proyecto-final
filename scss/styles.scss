@@ -177,7 +177,6 @@ p{
 
 
 
-
 /*media mobil*/
 
 @media (min-width: $medidamq-celu){
@@ -305,6 +304,10 @@ p{
     
     .pie-pagina {
         align-items: center;
+
+        p{
+            font-size: 1.3rem;
+        }
         
         .redes-sociales {
             justify-content: center;
@@ -312,9 +315,10 @@ p{
         }
         
         .enlace-red {
+            font-size: 1.2rem;
             justify-content: center;
             margin-left: 70px;
-        
+           
         }
     }
     
