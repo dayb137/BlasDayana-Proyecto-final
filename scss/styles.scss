@@ -98,6 +98,12 @@ p{
 
 /*estilo home*/
 
+
+.carousel-inner{
+    border-radius: 3px 50px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2)
+}
+
 .divHome{
     max-width: 1200px;
     margin: 0 auto;
@@ -109,10 +115,10 @@ p{
     
    
     .logo{
-        img{
+         img{
             max-width: 400px;
             margin-bottom: 20px;
-    /* Efecto de transparencia y rebote en el logo*/
+                     /* Efecto de transparencia y rebote en el logo*/
             opacity: 0;                     
             transform: translateY(-20px);
             animation: fadeInBounce 3s forwards;
@@ -134,8 +140,8 @@ p{
                     transform: translateY(0);
                 }
             }
-            
         }
+            
     }
     
     .contenido-texto{
@@ -201,15 +207,15 @@ p{
         justify-content: space-around;
         list-style-type: none;
         align-items: center;
-    }
-    
-    li{
-        display: block;
-        width: 20%;
-        font-size: 20px;
+        
+        li{
+            display: block;
+            width: 20%;
+            font-size: 20px;
+            
+        }
         
     }
-    
    
 
     .divHome{
@@ -313,13 +319,13 @@ p{
         .redes-sociales {
             justify-content: center;
             
-        }
-        
-        .enlace-red {
-            font-size: 1.2rem;
-            justify-content: center;
-            margin-left: 70px;
-           
+            
+            .enlace-red {
+                font-size: 1.2rem;
+                justify-content: center;
+                margin-left: 70px;
+                
+            }
         }
     }
     

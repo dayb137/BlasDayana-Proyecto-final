@@ -1,6 +1,8 @@
+/*mixins para darle estilo a los diferentes inputs*/ 
+
 @mixin input-form{
     width: 100%;
-    background-color: rgb(203 177 209 / 36%);
+    background-color: rgba(98, 78, 102, 0.36);
     box-sizing: border-box;
     padding: 10px 20px;
     border: none;
@@ -11,9 +13,11 @@
 
 }
 
+/* Estilo inputs tipo boton*/
+
 @mixin input-submit-reset{
     width: 100%;
-    color: #544158;
+    color: #f5e3f8;
     border: none;
     border-top: 2px solid rgb(109, 105, 105);
     border-radius: 5px;
@@ -23,7 +27,7 @@
     font-weight: bold;
 
     
-
+ /* efecto sobre el input boton al pasar el cursor*/
     &:hover{
         background-color: #4f3355e5;
         box-shadow: 0 5px 10px rgba(0,0,0,0.2);
@@ -35,6 +39,8 @@
     
 
 }
+
+/*mixins para darle estilo a los contenedores y a los formularios*/
 
 @mixin contenedor-form{
     width: 100%;

@@ -31,6 +31,9 @@
   .contacto h3 {
     font-size: 2.5rem;
   }
+  .contacto #cel-mail {
+    font-size: 1.4rem;
+  }
   .contacto #direccion {
     font-size: 1.4rem;
   }
@@ -129,11 +132,10 @@
   }
 }
 /* variables para definir medias q por si en un futuro se necesita de otra medida*/
-<<<<<<< HEAD
+/*mixins para darle estilo a los diferentes inputs*/
+/* Estilo inputs tipo boton*/
+/*mixins para darle estilo a los contenedores y a los formularios*/
 .contenido-formulario-cuenta {
-=======
-.contenido-formulario {
->>>>>>> 9dc47fb0617a9c4772d19b9fa07cb643638fed5a
   width: 100%;
   padding: 30px;
   display: flex;
@@ -146,11 +148,7 @@
   gap: 15px;
   flex-direction: column;
   align-items: center;
-<<<<<<< HEAD
   max-width: 700px;
-=======
-  max-width: 600px;
->>>>>>> 9dc47fb0617a9c4772d19b9fa07cb643638fed5a
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #755c7c;
@@ -167,7 +165,7 @@
 }
 .contenido-formulario-cuenta .form-cuenta input {
   width: 100%;
-  background-color: rgba(203, 177, 209, 0.36);
+  background-color: rgba(98, 78, 102, 0.36);
   box-sizing: border-box;
   padding: 10px 20px;
   border: none;
@@ -178,7 +176,7 @@
 }
 .contenido-formulario-cuenta .form-cuenta input[type=submit] {
   width: 100%;
-  color: #544158;
+  color: #f5e3f8;
   border: none;
   border-top: 2px solid rgb(109, 105, 105);
   border-radius: 5px;
@@ -186,13 +184,7 @@
   cursor: pointer;
   display: inline-block;
   font-weight: bold;
-}
-.contenido-formulario .form-cuenta label {
-  font-size: 16px;
-  font-weight: bold;
-  color: #422c50;
-  display: block;
-  margin-bottom: 5px;
+  /* efecto sobre el input boton al pasar el cursor*/
 }
 .contenido-formulario-cuenta .form-cuenta input[type=submit]:hover {
   background-color: rgba(79, 51, 85, 0.8980392157);
@@ -203,12 +195,7 @@
 
 /* Ajustes para vista escritorio*/
 @media (min-width: 1200px) {
-<<<<<<< HEAD
   .contenido-formulario-cuenta .form-cuenta {
-    display: flex;
-=======
-  .contenido-formulario .form-cuenta {
->>>>>>> 9dc47fb0617a9c4772d19b9fa07cb643638fed5a
     flex-direction: row;
     justify-content: space-between;
     width: 600px;
@@ -217,32 +204,10 @@
   }
 }
 /* variables para definir medias q por si en un futuro se necesita de otra medida*/
-<<<<<<< HEAD
+/*mixins para darle estilo a los diferentes inputs*/
+/* Estilo inputs tipo boton*/
+/*mixins para darle estilo a los contenedores y a los formularios*/
 .contenido-formulario-registro {
-=======
-.contenedor-registro {
-  width: 100%;
-  padding: 30px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  border-radius: 1px;
-}
-.contenedor-registro .form-reg {
-  display: flex;
-  gap: 15px;
-  flex-direction: column;
-  align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #755c7c;
-  box-shadow: 6px 6px rgba(209, 204, 204, 0.493);
-  border-radius: 10px;
-  font-family: "ubuntu";
-}
-.contenedor-registro .form-reg input {
->>>>>>> 9dc47fb0617a9c4772d19b9fa07cb643638fed5a
   width: 100%;
   padding: 30px;
   display: flex;
@@ -272,7 +237,7 @@
 }
 .contenido-formulario-registro .form-registro input {
   width: 100%;
-  background-color: rgba(203, 177, 209, 0.36);
+  background-color: rgba(98, 78, 102, 0.36);
   box-sizing: border-box;
   padding: 10px 20px;
   border: none;
@@ -281,14 +246,9 @@
   border-radius: 5px;
   margin-bottom: 5px;
 }
-<<<<<<< HEAD
 .contenido-formulario-registro .form-registro input[type=submit], .contenido-formulario-registro .form-registro input[type=reset] {
   width: 100%;
-=======
-.contenedor-registro .form-reg input[type=submit], .contenedor-registro .form-reg input[type=reset] {
-  width: 50%;
->>>>>>> 9dc47fb0617a9c4772d19b9fa07cb643638fed5a
-  color: #544158;
+  color: #f5e3f8;
   border: none;
   border-top: 2px solid rgb(109, 105, 105);
   border-radius: 5px;
@@ -296,13 +256,7 @@
   cursor: pointer;
   display: inline-block;
   font-weight: bold;
-}
-.contenedor-registro .form-reg label {
-  font-size: 16px;
-  font-weight: bold;
-  color: #422c50;
-  display: block;
-  margin-bottom: 5px;
+  /* efecto sobre el input boton al pasar el cursor*/
 }
 .contenido-formulario-registro .form-registro input[type=submit]:hover, .contenido-formulario-registro .form-registro input[type=reset]:hover {
   background-color: rgba(79, 51, 85, 0.8980392157);
@@ -310,20 +264,20 @@
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
 }
+.contenido-formulario-registro .form-registro label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #422c50;
+  display: block;
+  margin-bottom: 5px;
+}
 
 /* Ajustes para vista escritorio*/
 @media (min-width: 1200px) {
-<<<<<<< HEAD
   .contenido-formulario-registro {
     box-sizing: content-box;
   }
   .contenido-formulario-registro .form-registro {
-=======
-  .contenedor-registro {
-    box-sizing: content-box;
-  }
-  .contenedor-registro .form-reg {
->>>>>>> 9dc47fb0617a9c4772d19b9fa07cb643638fed5a
     width: auto;
     display: flex;
     flex-direction: row;
@@ -333,6 +287,9 @@
     gap: 15px;
   }
 }
+/*mixins para darle estilo a los diferentes inputs*/
+/* Estilo inputs tipo boton*/
+/*mixins para darle estilo a los contenedores y a los formularios*/
 .contenedor-inicio-sesion {
   width: 100%;
   padding: 30px;
@@ -340,6 +297,7 @@
   align-items: center;
   margin-bottom: 10px;
   border-radius: 1px;
+  height: 70vh;
 }
 .contenedor-inicio-sesion .form-inicio {
   display: flex;
@@ -363,7 +321,7 @@
 }
 .contenedor-inicio-sesion .form-inicio input {
   width: 100%;
-  background-color: rgba(203, 177, 209, 0.36);
+  background-color: rgba(98, 78, 102, 0.36);
   box-sizing: border-box;
   padding: 10px 20px;
   border: none;
@@ -374,12 +332,15 @@
 }
 .contenedor-inicio-sesion .form-inicio input[type=submit], .contenedor-inicio-sesion .form-inicio input[type=reset] {
   width: 100%;
-  color: #544158;
+  color: #f5e3f8;
   border: none;
   border-top: 2px solid rgb(109, 105, 105);
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  /* efecto sobre el input boton al pasar el cursor*/
 }
 .contenedor-inicio-sesion .form-inicio input[type=submit]:hover, .contenedor-inicio-sesion .form-inicio input[type=reset]:hover {
   background-color: rgba(79, 51, 85, 0.8980392157);
@@ -389,6 +350,9 @@
 }
 
 /* variables para definir medias q por si en un futuro se necesita de otra medida*/
+/*mixins para darle estilo a los diferentes inputs*/
+/* Estilo inputs tipo boton*/
+/*mixins para darle estilo a los contenedores y a los formularios*/
 * {
   margin: 0;
   padding: 0;
@@ -452,6 +416,11 @@ p {
 }
 
 /*estilo home*/
+.carousel-inner {
+  border-radius: 3px 50px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 .divHome {
   max-width: 1200px;
   margin: 0 auto;
@@ -525,7 +494,7 @@ p {
     list-style-type: none;
     align-items: center;
   }
-  li {
+  ul li {
     display: block;
     width: 20%;
     font-size: 20px;
@@ -584,7 +553,7 @@ p {
   .pie-pagina .redes-sociales {
     justify-content: center;
   }
-  .pie-pagina .enlace-red {
+  .pie-pagina .redes-sociales .enlace-red {
     font-size: 1.2rem;
     justify-content: center;
     margin-left: 70px;
