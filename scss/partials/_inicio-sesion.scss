@@ -1,3 +1,27 @@
-@import "_mixins";
+@import 'mixins';
 
+.contenedor-inicio-sesion{
+    @include contenedor-form;
 
+    .form-inicio{
+        @include form;
+
+        
+        label{
+            @include label;
+        }
+        
+
+        input{
+            @include input-form;
+           }
+           
+           input[type="submit"], input[type="reset"]{
+            @include input-submit-reset;
+           }
+   
+        
+        
+    }
+    
+}

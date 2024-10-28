@@ -12,7 +12,8 @@
 }
 .contacto .g-map {
   background-color: #705790;
-  padding: 20px;
+  padding: 23px;
+  border-radius: 10px;
 }
 .contacto .g-map iframe {
   width: 100%;
@@ -128,21 +129,20 @@
   }
 }
 /* variables para definir medias q por si en un futuro se necesita de otra medida*/
-.contenido-formulario {
+.contenido-formulario-cuenta {
+  width: 100%;
   padding: 30px;
   display: flex;
   align-items: center;
-  justify-content: center;
   margin-bottom: 10px;
-  width: 100%;
   border-radius: 1px;
 }
-.contenido-formulario .form-cuenta {
+.contenido-formulario-cuenta .form-cuenta {
   display: flex;
   gap: 15px;
   flex-direction: column;
   align-items: center;
-  width: 300px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #755c7c;
@@ -150,9 +150,16 @@
   border-radius: 10px;
   font-family: "ubuntu";
 }
-.contenido-formulario .form-cuenta input {
+.contenido-formulario-cuenta .form-cuenta label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #422c50;
+  display: block;
+  margin-bottom: 5px;
+}
+.contenido-formulario-cuenta .form-cuenta input {
   width: 100%;
-  background-color: rgba(234, 207, 240, 0.2470588235);
+  background-color: rgba(203, 177, 209, 0.36);
   box-sizing: border-box;
   padding: 10px 20px;
   border: none;
@@ -161,8 +168,8 @@
   border-radius: 5px;
   margin-bottom: 5px;
 }
-.contenido-formulario .form-cuenta input[type=submit] {
-  width: 50%;
+.contenido-formulario-cuenta .form-cuenta input[type=submit] {
+  width: 100%;
   color: #544158;
   border: none;
   border-top: 2px solid rgb(109, 105, 105);
@@ -170,21 +177,56 @@
   padding: 10px 20px;
   cursor: pointer;
 }
+.contenido-formulario-cuenta .form-cuenta input[type=submit]:hover {
+  background-color: rgba(79, 51, 85, 0.8980392157);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
 
 /* Ajustes para vista escritorio*/
 @media (min-width: 1200px) {
-  .contenido-formulario .form-cuenta {
+  .contenido-formulario-cuenta .form-cuenta {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 600px;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 40px;
   }
 }
 /* variables para definir medias q por si en un futuro se necesita de otra medida*/
-.contenido-formulario .form-cuenta input {
+.contenido-formulario-registro {
   width: 100%;
-  background-color: rgba(234, 207, 240, 0.2470588235);
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 1px;
+}
+.contenido-formulario-registro .form-registro {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #755c7c;
+  box-shadow: 6px 6px rgba(209, 204, 204, 0.493);
+  border-radius: 10px;
+  font-family: "ubuntu";
+}
+.contenido-formulario-registro .form-registro label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #422c50;
+  display: block;
+  margin-bottom: 5px;
+}
+.contenido-formulario-registro .form-registro input {
+  width: 100%;
+  background-color: rgba(203, 177, 209, 0.36);
   box-sizing: border-box;
   padding: 10px 20px;
   border: none;
@@ -193,8 +235,8 @@
   border-radius: 5px;
   margin-bottom: 5px;
 }
-.contenido-formulario .form-cuenta input[type=submit], .contenido-formulario .form-cuenta input[type=reset] {
-  width: 50%;
+.contenido-formulario-registro .form-registro input[type=submit], .contenido-formulario-registro .form-registro input[type=reset] {
+  width: 100%;
   color: #544158;
   border: none;
   border-top: 2px solid rgb(109, 105, 105);
@@ -202,21 +244,83 @@
   padding: 10px 20px;
   cursor: pointer;
 }
+.contenido-formulario-registro .form-registro input[type=submit]:hover, .contenido-formulario-registro .form-registro input[type=reset]:hover {
+  background-color: rgba(79, 51, 85, 0.8980392157);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
 
 /* Ajustes para vista escritorio*/
 @media (min-width: 1200px) {
-  .contenido-formulario {
+  .contenido-formulario-registro {
     box-sizing: content-box;
   }
-  .contenido-formulario .form-cuenta {
+  .contenido-formulario-registro .form-registro {
     width: auto;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 600px;
     flex-wrap: wrap;
     gap: 15px;
   }
 }
+.contenedor-inicio-sesion {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 1px;
+}
+.contenedor-inicio-sesion .form-inicio {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #755c7c;
+  box-shadow: 6px 6px rgba(209, 204, 204, 0.493);
+  border-radius: 10px;
+  font-family: "ubuntu";
+}
+.contenedor-inicio-sesion .form-inicio label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #422c50;
+  display: block;
+  margin-bottom: 5px;
+}
+.contenedor-inicio-sesion .form-inicio input {
+  width: 100%;
+  background-color: rgba(203, 177, 209, 0.36);
+  box-sizing: border-box;
+  padding: 10px 20px;
+  border: none;
+  border-left: 3px solid #544158;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.contenedor-inicio-sesion .form-inicio input[type=submit], .contenedor-inicio-sesion .form-inicio input[type=reset] {
+  width: 100%;
+  color: #544158;
+  border: none;
+  border-top: 2px solid rgb(109, 105, 105);
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.contenedor-inicio-sesion .form-inicio input[type=submit]:hover, .contenedor-inicio-sesion .form-inicio input[type=reset]:hover {
+  background-color: rgba(79, 51, 85, 0.8980392157);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
 /* variables para definir medias q por si en un futuro se necesita de otra medida*/
 * {
   margin: 0;

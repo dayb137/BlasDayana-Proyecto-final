@@ -60,26 +60,50 @@
         <h1> Crea tu cuenta</h1>
 <!-- contenedor del formulario -->
  
-  <section class="contenido-formulario">
+  <section class="contenido-formulario-registro">
 
-        <form class="form-cuenta" >
-          Nombre
-          <input type="text">
-          Password
-          <input type="password">
-          Reingrese Password
-          <input type="password">
-          Direccion
-          <input type="text">
-          Tel
-          <input type="tel">
-          Fecha de nacimiento
-          <input type="date">
-          E-mail
-          <input type="email">
+        <form class="form-registro" >
+
+          <div class="campo-formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text">
+          </div>
           
-          <input type="submit" value="Registrarse">
-          <input type="reset" value="Restablecer">
+          <div class="campo-formulario" >
+            <label for="contrasena actual">Contraseña actual:</label>
+            <input type="password">
+          </div>
+
+          <div class="campo-formulario">
+
+            <label for="nueva contrasena">Nueva contraseña:</label>
+            <input type="password">
+          </div>
+
+          <div class="campo-formulario">
+            <label for="direccion">Direción:</label>
+            <input type="text">
+          </div>
+
+          <div class="campo-formulario">
+            <label for="telefono">Telefono:</label>
+            <input type="tel">
+          </div >
+
+            <div class="campo-formulario">
+              <label for="fecha naciemiento">Fecha de nacimiento:</label>
+              <input type="date">
+            </div>
+
+            <div class="campo-formulario">
+             <label for="correo electronico">Correo electrónico:</label>
+              <input type="email">
+            </div>
+          
+            <div>
+              <input type="submit" value="Registrarse">
+              <input type="reset" value="Restablecer">
+            </div>
      
          </form>
     </section>
