@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-@import 'mixins';
-=======
+
 @import '_mixins';
 
 .contenedor-inicio-sesion{
@@ -27,12 +25,11 @@
         
 
 }
->>>>>>> 9dc47fb0617a9c4772d19b9fa07cb643638fed5a
+
 
 .contenedor-inicio-sesion{
     @include contenedor-form;
 
-<<<<<<< HEAD
     .form-inicio{
         @include form;
 
@@ -54,17 +51,4 @@
         
     }
     
-=======
-@media (min-width: $medidamq-pc){
-    
-    .contenedor-inicio-sesion{
-        @include contenedor-form;
-        
-        .form-inicio{
-
-            width: 80%;
-            height: 100vh;
-        }
-    }
->>>>>>> 9dc47fb0617a9c4772d19b9fa07cb643638fed5a
 }
