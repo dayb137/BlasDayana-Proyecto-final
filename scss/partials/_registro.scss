@@ -2,17 +2,26 @@
 @import '_mixins';
 
 
+<<<<<<< HEAD
 .contenido-formulario-registro{
+=======
+.contenedor-registro{
+>>>>>>> 9dc47fb0617a9c4772d19b9fa07cb643638fed5a
     @include contenedor-form;
     
     
     
+<<<<<<< HEAD
     .form-registro{
         @include form;
 
         label{
             @include label;
         }
+=======
+    .form-reg{
+        @include form;
+>>>>>>> 9dc47fb0617a9c4772d19b9fa07cb643638fed5a
         
         input{
          @include input-form;
@@ -21,6 +30,11 @@
         input[type="submit"], input[type="reset"]{
          @include input-submit-reset;
         }
+
+        label{
+            @include label
+        }
+    
 
     }
     
@@ -32,10 +46,17 @@
     
     @media (min-width: $medidamq-pc){
 
+<<<<<<< HEAD
         .contenido-formulario-registro{
             box-sizing: content-box;
             
             .form-registro{
+=======
+        .contenedor-registro{
+            box-sizing: content-box;
+            
+            .form-reg{
+>>>>>>> 9dc47fb0617a9c4772d19b9fa07cb643638fed5a
                 width: auto;
                 display: flex;
                 flex-direction:row;

@@ -6,6 +6,7 @@ $color-principal: #d097f6;
 $color-secundario: #0d0711;
 
 
+<<<<<<< HEAD
 .contenido-formulario-cuenta{
     @include contenedor-form;
     
@@ -18,6 +19,16 @@ $color-secundario: #0d0711;
             @include label;
         }
         
+=======
+.contenido-formulario{
+
+    @include contenedor-form;
+
+    
+    
+    .form-cuenta{
+       @include form;
+>>>>>>> 9dc47fb0617a9c4772d19b9fa07cb643638fed5a
         
         input{
          @include input-form;
@@ -25,10 +36,17 @@ $color-secundario: #0d0711;
         }
         
         input[type="submit"]{
+            
          @include input-submit-reset;
         }
 
+<<<<<<< HEAD
 
+=======
+        label{
+            @include label
+        }
+>>>>>>> 9dc47fb0617a9c4772d19b9fa07cb643638fed5a
     
     
     
@@ -42,17 +60,26 @@ $color-secundario: #0d0711;
     
     @media (min-width: $medidamq-pc){
 
+<<<<<<< HEAD
         .contenido-formulario-cuenta{
+=======
+        .contenido-formulario{
+
+>>>>>>> 9dc47fb0617a9c4772d19b9fa07cb643638fed5a
 
             .form-cuenta{
-                display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 width: 600px;
                 flex-wrap: wrap;
+<<<<<<< HEAD
                 gap: 40px;
 
 
+=======
+                gap: 15px;
+                
+>>>>>>> 9dc47fb0617a9c4772d19b9fa07cb643638fed5a
             }
 
             

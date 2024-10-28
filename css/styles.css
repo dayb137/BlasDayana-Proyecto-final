@@ -129,7 +129,11 @@
   }
 }
 /* variables para definir medias q por si en un futuro se necesita de otra medida*/
+<<<<<<< HEAD
 .contenido-formulario-cuenta {
+=======
+.contenido-formulario {
+>>>>>>> 9dc47fb0617a9c4772d19b9fa07cb643638fed5a
   width: 100%;
   padding: 30px;
   display: flex;
@@ -142,7 +146,11 @@
   gap: 15px;
   flex-direction: column;
   align-items: center;
+<<<<<<< HEAD
   max-width: 700px;
+=======
+  max-width: 600px;
+>>>>>>> 9dc47fb0617a9c4772d19b9fa07cb643638fed5a
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #755c7c;
@@ -176,6 +184,15 @@
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+}
+.contenido-formulario .form-cuenta label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #422c50;
+  display: block;
+  margin-bottom: 5px;
 }
 .contenido-formulario-cuenta .form-cuenta input[type=submit]:hover {
   background-color: rgba(79, 51, 85, 0.8980392157);
@@ -186,8 +203,12 @@
 
 /* Ajustes para vista escritorio*/
 @media (min-width: 1200px) {
+<<<<<<< HEAD
   .contenido-formulario-cuenta .form-cuenta {
     display: flex;
+=======
+  .contenido-formulario .form-cuenta {
+>>>>>>> 9dc47fb0617a9c4772d19b9fa07cb643638fed5a
     flex-direction: row;
     justify-content: space-between;
     width: 600px;
@@ -196,7 +217,32 @@
   }
 }
 /* variables para definir medias q por si en un futuro se necesita de otra medida*/
+<<<<<<< HEAD
 .contenido-formulario-registro {
+=======
+.contenedor-registro {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 1px;
+}
+.contenedor-registro .form-reg {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #755c7c;
+  box-shadow: 6px 6px rgba(209, 204, 204, 0.493);
+  border-radius: 10px;
+  font-family: "ubuntu";
+}
+.contenedor-registro .form-reg input {
+>>>>>>> 9dc47fb0617a9c4772d19b9fa07cb643638fed5a
   width: 100%;
   padding: 30px;
   display: flex;
@@ -235,14 +281,28 @@
   border-radius: 5px;
   margin-bottom: 5px;
 }
+<<<<<<< HEAD
 .contenido-formulario-registro .form-registro input[type=submit], .contenido-formulario-registro .form-registro input[type=reset] {
   width: 100%;
+=======
+.contenedor-registro .form-reg input[type=submit], .contenedor-registro .form-reg input[type=reset] {
+  width: 50%;
+>>>>>>> 9dc47fb0617a9c4772d19b9fa07cb643638fed5a
   color: #544158;
   border: none;
   border-top: 2px solid rgb(109, 105, 105);
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+}
+.contenedor-registro .form-reg label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #422c50;
+  display: block;
+  margin-bottom: 5px;
 }
 .contenido-formulario-registro .form-registro input[type=submit]:hover, .contenido-formulario-registro .form-registro input[type=reset]:hover {
   background-color: rgba(79, 51, 85, 0.8980392157);
@@ -253,10 +313,17 @@
 
 /* Ajustes para vista escritorio*/
 @media (min-width: 1200px) {
+<<<<<<< HEAD
   .contenido-formulario-registro {
     box-sizing: content-box;
   }
   .contenido-formulario-registro .form-registro {
+=======
+  .contenedor-registro {
+    box-sizing: content-box;
+  }
+  .contenedor-registro .form-reg {
+>>>>>>> 9dc47fb0617a9c4772d19b9fa07cb643638fed5a
     width: auto;
     display: flex;
     flex-direction: row;
@@ -511,10 +578,14 @@ p {
   .pie-pagina {
     align-items: center;
   }
+  .pie-pagina p {
+    font-size: 1.3rem;
+  }
   .pie-pagina .redes-sociales {
     justify-content: center;
   }
   .pie-pagina .enlace-red {
+    font-size: 1.2rem;
     justify-content: center;
     margin-left: 70px;
   }

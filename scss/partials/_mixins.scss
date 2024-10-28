@@ -19,8 +19,12 @@
     border-radius: 5px;
     padding: 10px 20px;
     cursor:pointer;
+    display: inline-block;
+    font-weight: bold;
+
     
 
+<<<<<<< HEAD
     &:hover{
         background-color: #4f3355e5;
         box-shadow: 0 5px 10px rgba(0,0,0,0.2);
@@ -31,6 +35,8 @@
     }
     
 
+=======
+>>>>>>> 9dc47fb0617a9c4772d19b9fa07cb643638fed5a
 }
 
 @mixin contenedor-form{
@@ -48,7 +54,11 @@
     gap: 15px;
     flex-direction: column;
     align-items: center;
+<<<<<<< HEAD
     max-width: 700px;
+=======
+    max-width: 600px;
+>>>>>>> 9dc47fb0617a9c4772d19b9fa07cb643638fed5a
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #755c7c;
